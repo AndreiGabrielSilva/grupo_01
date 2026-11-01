@@ -14,11 +14,11 @@ A tabela mostra os campos de uma estrutura de banco de dados, incluindo:
 ## Estrutura do projeto
 
 ```text
-projetohtmlclovis/
-├── index.html   # Estrutura da página e da tabela
-├── config.js    # Dados dos campos que serão exibidos
-├── script.js    # Código que cria as linhas da tabela
-├── style.css    # Aparência e layout da tabela
+grupo_01/
+├── /diagramas   # Diagramas
+├── /docs    # PDF e participantes
+├── /html    # Dicionario em html e js
+├── /sql    # DDL e DML workbanch teste
 └── README.md    # Documentação do projeto
 ```
 
