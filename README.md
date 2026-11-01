@@ -123,3 +123,14 @@ Define cores, tamanhos, espaçamentos, bordas, larguras das colunas e rolagem ho
 - HTML5
 - CSS3
 - JavaScript puro
+
+## Scripts SQL (MySQL)
+
+Os arquivos SQL estao na pasta `sql/` e devem ser executados nesta ordem:
+
+1. `01_ddl_estrutura.sql` cria o banco e as tabelas.
+2. `02_dml_massa_dados.sql` insere dados ficticios para teste. Execute uma vez em uma base vazia; executa-lo novamente gera conflitos de chave primaria.
+3. `03_consultas_gerenciais.sql` contem consultas para relatorios gerenciais.
+4. `04_consultas_auditoria.sql` contem consultas para procurar inconsistencias.
+
+Abra os arquivos no MySQL Workbench e execute um por vez. As consultas de atraso usam `CURDATE()` e, por isso, os resultados variam conforme o dia em que forem executadas.

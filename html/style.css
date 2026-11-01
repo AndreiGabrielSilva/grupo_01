@@ -1,0 +1,136 @@
+/*
+  ESTILO DA TABELA
+  ----------------
+
+  Este arquivo contém somente a aparência da página.
+  Os dados ficam no config.js e a montagem da tabela fica no script.js.
+*/
+
+/* Inclui padding e borda no tamanho total dos elementos. */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove a margem padrão e define uma fonte simples e legível. */
+body {
+  margin: 0;
+  padding: 32px 16px 56px;
+  background: linear-gradient(180deg, #edf3f9 0%, #f7f9fc 100%);
+  color: #111111;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Limita a largura para a tabela não ficar exageradamente esticada. */
+.container {
+  width: min(100%, 1200px);
+  margin: 0 auto 30px;
+  padding: 18px 18px 10px;
+  background: #ffffff;
+  border: 1px solid #dfe7f3;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(17, 24, 39, 0.05);
+}
+
+h1 {
+  margin: 0 0 16px;
+  font-size: 24px;
+  line-height: 1.3;
+  color: #1a2233;
+  letter-spacing: 0.02em;
+}
+
+/*
+  Permite rolagem horizontal em telas pequenas.
+  Assim, a tabela continua utilizável no celular sem quebrar o layout.
+*/
+.tabela-wrapper {
+  overflow-x: auto;
+  border-radius: 10px;
+  border: 1px solid #dfe7f3;
+}
+
+table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+/* Cor azul usada no cabeçalho e na primeira coluna da imagem. */
+thead th {
+  background: linear-gradient(180deg, #3d6ea8 0%, #2d5f99 100%);
+  color: #ffffff;
+}
+
+tbody td:first-child {
+  background: #dfeaf8;
+  color: #1e2a39;
+}
+
+/* Estilo do cabeçalho. */
+thead th {
+  padding: 12px 10px;
+  border: 1px solid #c7d5eb;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 17px;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+/* Estilo geral das células de dados. */
+tbody td {
+  padding: 10px 10px;
+  border: 1px solid #dfe7f3;
+  background-color: #f5f8fd;
+  font-size: 16px;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+  vertical-align: middle;
+  color: #1f2937;
+}
+
+/* Coluna do nome do campo em negrito, como no exemplo da imagem. */
+tbody td:first-child {
+  font-weight: bold;
+}
+
+/* Alterna a cor das linhas para facilitar a leitura. */
+tbody tr:nth-child(even) td:not(:first-child) {
+  background-color: #edf3fb;
+}
+
+tbody tr:nth-child(odd) td:not(:first-child) {
+  background-color: #f9fbff;
+}
+
+/* Define proporções parecidas com as colunas do exemplo. */
+th:nth-child(1),
+td:nth-child(1) {
+  width: 17%;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: 14%;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+  width: 19%;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+  width: 10%;
+}
+
+th:nth-child(5),
+td:nth-child(5) {
+  width: 11%;
+}
+
+th:nth-child(6),
+td:nth-child(6) {
+  width: 29%;
+}
